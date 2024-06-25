@@ -6,10 +6,24 @@
 
 Install Conda from https://docs.anaconda.com/miniconda/
 
+```bash
+conda create env -f environment.yml
+```
+
+Alternatively, use python Virtul Environment
+
+```bash
+python -m venv utvenv
+
+utvenv\Scripts\activate [In Windows]
+source utvenv/bin/activate [In Mac]
+
+pip install -r requirements.txt
+```
+
 Install OLLAMA from https://ollama.com/download
 
 ```bash
-conda create env -f environment.yml
 ollama pull mistral
 ```
 
