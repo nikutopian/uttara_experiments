@@ -44,11 +44,11 @@ def analyze_content(content_mapping: Dict[str, str], expense_policy: str) -> str
 
     for file_path, content in content_mapping.items():
         # Prepare output for each file
+        output = "-"*100
+        output += f"File: {file_path}\n"
         output += "-"*100
-        output = f"File: {file_path}\n"
-        output += "-"*100
-        output += f"Content: {content}\n"
-        output += "-"*100
+        # output += f"Content: {content}\n"
+        # output += "-"*100
         output += "\n\n"
 
         full_output += output
