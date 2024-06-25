@@ -16,6 +16,8 @@ ollama pull mistral
 ### Run the program
 
 ```bash
+conda activate utenv
+
 python expense_policy_report.py \
     -p <path_to_expense_policy> \
     -i <path_to_zip_file_or_folder> \
