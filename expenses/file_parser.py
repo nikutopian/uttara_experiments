@@ -294,24 +294,3 @@ class FileParser:
         except Exception as e:
             raise ParseError(f"Error parsing image file: {str(e)}")
 
-# Usage example
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    parser = FileParser()
-    try:
-        file_path = "/Users/nikhilramesh/Downloads/Expense policy/Expense policy.docx"
-        # file_path = "/Users/nikhilramesh/Downloads/Expense policy.zip"
-        # file_path = "/Users/nikhilramesh/Downloads/Expense policy/Expenses submitted by Employee A/29 Sep dinner.pdf"
-        result = parser.parse_file(file_path)
-        print(result)
-    except FileTooLargeError as e:
-        print(f"File is too large: {str(e)}")
-    except ProcessingTimeoutError as e:
-        print(f"Processing timed out: {str(e)}")
-    except FileParserError as e:
-        print(f"Error parsing file: {str(e)}")
-    except FileNotFoundError as e:
-        print(f"File not found: {str(e)}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {str(e)}")
-        
