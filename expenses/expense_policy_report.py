@@ -55,8 +55,8 @@ def analyze_content(content_mapping: Dict[str, str], expense_policy: str) -> str
         print(output)
 
         # Prepare user prompt for the LLM
-        user_prompt = f"Given the company's expense policy : {expense_policy}. Can you now validate if the expense document conforms with the expense policy. Document: {content}"
-        response = client.chat(model="mistral", messages=[
+        user_prompt = f"Given the company's expense policy : {expense_policy}. \n\nAnd given the Document: {content}. \n\nCan you now validate if the expense document conforms with the expense policy?"
+        response = client.chat(model="llama3", messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": user_prompt}
         ])
