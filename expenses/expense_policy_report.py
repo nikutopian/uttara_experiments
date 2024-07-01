@@ -36,7 +36,7 @@ def process_input(input_path: str) -> Dict[str, str]:
     return file_mapping
 
 # Function to analyze the content of files against the expense policy
-def analyze_content(content_mapping: Dict[str, str], expense_policy: str) -> str:
+def analyze_content(content_mapping: Dict[str, str], expense_policy: str, model_name: str) -> str:
     sys_prompt = "You are a finance controller in a company who is tasked with making sure all expenses submitted by employees conform to the company's expense policy."
     client = ollama.Client()
 
@@ -56,7 +56,7 @@ def analyze_content(content_mapping: Dict[str, str], expense_policy: str) -> str
 
         # Prepare user prompt for the LLM
         user_prompt = f"Given the company's expense policy : {expense_policy}. \n\nAnd given the Document: {content}. \n\nCan you now validate if the expense document conforms with the expense policy?"
-        response = client.chat(model="llama3", messages=[
+        response = client.chat(model=model_name, messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": user_prompt}
         ])
@@ -72,6 +72,7 @@ def main():
     parser.add_argument("-i", "--input", required=True, help="Path to zip file or folder")
     parser.add_argument("-p", "--policy", required=True, help="Path to expense policy document")
     parser.add_argument("-o", "--output", required=True, help="Path to output file")
+    parser.add_argument("-m", "--model", required=True, help="Ollama model identifier")
     args = parser.parse_args()
 
     try:
@@ -81,7 +82,7 @@ def main():
         # Parse the expense policy document
         expense_policy = file_parser.parse_file(args.policy)
         # Analyze the content of the files
-        analysis_result = analyze_content(content_list, expense_policy)
+        analysis_result = analyze_content(content_list, expense_policy, args.model)
         # Write the analysis result to the output file
         with open(args.output, "w") as f:
             f.write(analysis_result)
