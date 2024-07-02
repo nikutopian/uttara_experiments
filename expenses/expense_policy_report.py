@@ -37,32 +37,89 @@ def process_input(input_path: str) -> Dict[str, str]:
 
 # Function to analyze the content of files against the expense policy
 def analyze_content(content_mapping: Dict[str, str], expense_policy: str, model_name: str) -> str:
-    sys_prompt = "You are a finance controller in a company who is tasked with making sure all expenses submitted by employees conform to the company's expense policy."
+    sys_prompt = "You are a finance controller at a company, responsible for ensuring that all submitted expense documents adhere to the company's expense policy. Your task is to carefully review each expense document and determine if it meets the policy requirements. Provide clear and concise feedback based on your assessment."
     client = ollama.Client()
 
     full_output = ''
 
     for file_path, content in content_mapping.items():
         # Prepare output for each file
-        output = "-"*100
-        output += f"File: {file_path}\n"
-        output += "-"*100
+        output = "-"*10
+        output += f"File: {file_path}"
+        output += "-"*10
         # output += f"Content: {content}\n"
         # output += "-"*100
-        output += "\n\n"
+        output += "\n"
 
         full_output += output
         print(output)
 
         # Prepare user prompt for the LLM
-        user_prompt = f"Given the company's expense policy : {expense_policy}. \n\nAnd given the Document: {content}. \n\nCan you now validate if the expense document conforms with the expense policy?"
+        user_prompt = f"""
+            Expense Document: {content}\n\n
+
+            Expense Policy: {expense_policy}\n\n
+
+            Review the contents of Expense Document and compare it with the Expense Policy. Follow the instructions carefully and do not provide open ended strings in your response.
+
+            Instructions:
+                1. Response should be exactly one of the three string - "Conforms", "Does not Conform" or "Not an Expense Document".
+                2. If the Expense Document conforms to the policy, respond with "Conforms"
+                3. If the Expense Document does not conform to the policy, respond with "Does not Conform".
+                4. If the Expense Document does not represent an expense report, respond with "Not an Expense Document".
+            """
+        response = client.chat(model=model_name, messages=[
+            {"role": "system", "content": sys_prompt},
+            {"role": "user", "content": user_prompt},
+        ])
+        audit_decision = response['message']['content']
+        full_output += f"Audit Decision: {audit_decision}\n"
+
+        user_prompt = f"""
+
+            Expense Document: {content}\n\n
+
+            Expense Policy: {expense_policy}\n\n
+
+            Audit Decision: {audit_decision}\n\n
+
+            Review the contents of Expense Document and compare it with the Expense Policy. Follow the instructions carefully and do not provide open ended strings in your response.
+
+            Instructions:
+                1. Response should be exactly one of the two string - "N/A" or a string explaining why the Expense Document does not conform with Expense Policy.
+                2. If the Audit Decision is "Conforms", respond with "N/A".
+                3. If the Audit Decision is "Does not Conform" figure out the primary reason for non-conformance and respond back with the reason.
+                4. If the Audit Decision is "Not an Expense Document", respond with "N/A".
+            """
+        response = client.chat(model=model_name, messages=[
+            {"role": "system", "content": sys_prompt},
+            {"role": "user", "content": user_prompt},
+        ])
+        decision_reason = response['message']['content']
+        full_output += f"Reason: {decision_reason}\n"
+
+        user_prompt = f"""
+            Expense Document: {content}\n\n
+
+            Expense Policy: {expense_policy}\n\n
+
+            Audit Decision: {audit_decision}\n\n
+
+            Reason: {decision_reason}\n\n
+
+            Please figure out the confidence level in the Audit Decision and Reason for the given Expense Document by comparing it with Expense Policy. Respond back with one of the three strings - "Low", "Medium", or "High" depending on the level of confidence. Do not respond with anything else.
+            """
         response = client.chat(model=model_name, messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": user_prompt}
         ])
-        assistant_output = f"Assistant: {response['message']['content']}\n"
-        full_output += assistant_output
-        print(assistant_output)
+        audit_confidence = response['message']['content']
+        full_output += f"Audit Confidence: {audit_confidence}\n"
+
+        print(f"Audit Decision: {audit_decision}\n")
+        print(f"Reason: {decision_reason}\n")
+        print(f"Audit Confidence: {audit_confidence}\n")
+        print("*"*100)
 
     return full_output
 

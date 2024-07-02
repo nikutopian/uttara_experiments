@@ -1,0 +1,164 @@
+----------File: Input/Reports/Public transport 26 Sep.PNG----------
+Audit Response: Here is the response in JSON format:
+
+```
+{
+    "Decision": "Conforms",
+    "Reason": "N/A"
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/SG Arrival card.pdf----------
+Audit Response: {
+"Decision": "Not an Expense Document",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/Public transport 27 Sep.PNG----------
+Audit Response: Here is the review response:
+
+```
+{
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Dinner with Jem.pdf----------
+Audit Response: Here is the response in JSON dictionary format:
+
+{
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+
+The expense document conforms to the policy because it provides detailed receipts for each item purchased and meets the policy's requirements for documentation. The subtotal, surcharge, GST, and total are also correctly calculated. Additionally, the document includes a receipt date, which is within 30 days of incurring the expense, as required by the policy.
+Audit Confidence: Medium
+----------File: Input/Reports/Sep 27 lunch - to be reimbursed.pdf----------
+Audit Response: Here is the review result in JSON format:
+
+```
+{
+    "Decision": "Conforms",
+    "Reason": "N/A"
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Public transport 29 Sep 1.PNG----------
+Audit Response: Here is the review of the expense document:
+
+{
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/Taxi 27 Sep - Purvis street - to be reimbursed.PNG----------
+Audit Response: {
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/29 Sep dinner.pdf----------
+Audit Response: {
+"Decision": "Does not Conform",
+"Reason": "The expense document contains items such as Lemon CorianderSoup, Mexican Bhel, and Masala Momos (Pan fried) which do not fall under the categories of Travel Expenses, Business Meals and Entertainment, Office Supplies and Equipment, Training and Conferences, Communication Expenses, or Miscellaneous Expenses. These types of expenses are considered personal and do not meet the policy's guidelines for reimbursement."
+}
+Audit Confidence: High
+----------File: Input/Reports/Taxi to airport Sep 30 - to be reimbursed.pdf----------
+Audit Response: Here is the response:
+
+```
+{
+"Decision": "Does not Conform",
+"Reason": "The document appears to be a receipt from a taxi company, but it does not include any information about the purpose of the trip or the names of individuals involved. Additionally, there is no indication that this expense was submitted through the company's approved process."
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Public transport 29 Sep 2.PNG----------
+Audit Response: Here is the review result:
+
+```
+{
+    "Decision": "Does not Conform",
+    "Reason": "The document appears to be a record of public transportation transactions rather than a typical expense report. It lacks detailed receipts and descriptions of expenses, making it difficult to determine the purpose and reasonability of the expenditures."
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Taxi 28 Sep - MBS - to be reimbursed.pdf----------
+Audit Response: Here is the review of the Expense Document against the Expense Policy:
+
+{
+"Decision": "Does not Conform",
+"Reason": "The document appears to be a receipt for a ride-hailing service (Gojek) and does not meet the criteria for an expense report as outlined in the policy. The document lacks essential information such as purpose, date, amount claimed, and supporting documentation."
+}
+Audit Confidence: High
+----------File: Input/Reports/Public transport 28 Sep.PNG----------
+Audit Response: Here is the review result:
+
+```
+{
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Flight tickets.pdf----------
+Audit Response: {
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/TOKEN2049_Singapore_Event_Brochure_2022.pdf----------
+Audit Response: {
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/KKT Reimbursement - Ajay.xlsx----------
+Audit Response: Here is the response in JSON format:
+
+```
+{
+    "Decision": "Conforms",
+    "Reason": "N/A"
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Public transport 30 Sep.PNG----------
+Audit Response: Here is the review and response:
+
+Decision: Conforms
+Reason: N/A
+Audit Confidence: Medium
+----------File: Input/Reports/Taxi from airport Sep 26 - to be reimbursed.pdf----------
+Audit Response: {
+"Decision": "Conforms",
+"Reason": "N/A"
+}
+Audit Confidence: Medium
+----------File: Input/Reports/Taxi 29 Sep - Scarlet - to be reimbursed.pdf----------
+Audit Response: {
+"Decision": "Does not Conform",
+"Reason": "The document appears to be a receipt from Gojek, a ride-hailing service, and does not meet the criteria for an expense report as outlined in the policy."
+}
+Audit Confidence: Medium
+----------File: Input/Reports/Taxi 26 Sep - Carlton - to be reimbursed.PNG----------
+Audit Response: Here is the response in JSON format:
+
+```
+{
+"Decision": "Does not Conform",
+"Reason": "The document appears to be a ride-hailing receipt and does not meet the criteria for a business expense report as outlined in the policy. Specifically, it lacks detailed receipts, itemized expenses, and approval from an immediate supervisor or designated approver."
+}
+```
+Audit Confidence: Medium
+----------File: Input/Reports/Booking #2336064241.pdf----------
+Audit Response: Here is a JSON dictionary with the required information:
+
+```
+{
+    "Decision": "Conforms",
+    "Reason": "N/A"
+}
+```
+Audit Confidence: High
