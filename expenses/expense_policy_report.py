@@ -4,6 +4,9 @@ import zipfile
 from typing import List, Dict
 import ollama
 from file_parser import FileParser
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 # Function to process input path (zip file or folder) and return a mapping of file paths to their content
 def process_input(input_path: str) -> Dict[str, str]:
