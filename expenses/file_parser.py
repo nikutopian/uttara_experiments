@@ -13,6 +13,10 @@ import time
 from functools import wraps
 from tqdm import tqdm
 import pdf2image
+import platform
+
+if platform.system() == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 # Try to import magic, but provide a fallback if it's not available
 try:
