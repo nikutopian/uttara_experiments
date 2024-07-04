@@ -1,0 +1,117 @@
+
+
+Input Query: What is the profit for Indifi for FY22? Do not calculate. Extract this information from the document.
+
+
+----------Input File: Input/InvestmentSupportingDocuments/Financials/Sep22/RIPL FS_Sep-22 - Provisional.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/Sep22/FS_Provisional_Indifi standalone_Sept 22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/Sep22/FS_Provisional_Indifi console_Sept 22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY22/Riviera- Financials Signed -31-03-22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY22/Indifi Standalone Financials  Audited 2021-22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY22/Indifi Consol Financials -Audited March 22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/June22/Riviera June 22 Financials (Provisional).pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/June22/Indifi Conso Financials June-22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/June22/Indifi Financials June-22.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY20/Indifi Financials - Signed - 31-03-20.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY20/Consolidated Financials- Mar'20_FY-19-20 Signed.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY20/Riviera- Financials Signed - 31-03-20.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY21/Mar'21_Indifi Standalone Financials 1.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY21/Mar'21_Indifi Consol Financials Signed.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY21/Riviera Financial in Split Mar'21/Mar'21_Riviera Financials-1-15-28.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Financials/FY21/Riviera Financial in Split Mar'21/Mar'21_Riviera Financials-1-1-14.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/IM_CAM/CAM - Indifi_Riviera - Sep'22.xlsx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/IM_CAM/IM - Indifi - Dec'22_v3.1.docx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Draft Term Sheet_NCD_Jan'2023.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/External Rating/CIRISL BBB   09 Dec'22- Riviera .pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Riviera (Indifi) NCD - Repayment Schedule.xlsx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/Ministry Of Corporate Affairs - MCA Services.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/List of charges from MCA site.xlsx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/Repayment Schedule - Riviera(Indifi) NCD.xlsx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/Corporate Guarantee.docx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/FINAL Term Sheet_Indfi_Final Term Sheet.pdf----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/Debenture Trust Deed.docx----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
+----------Input File: Input/InvestmentSupportingDocuments/Documents/Deed of Hypothecation.DOCX----------
+Answer: Cannot Find The Answer
+
+****************************************************************************************************
