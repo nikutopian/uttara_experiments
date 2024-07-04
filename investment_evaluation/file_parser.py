@@ -276,7 +276,7 @@ class FileParser:
     def parse_xlsx(self, file_path):
         """Parse XLSX file."""
         try:
-            workbook = openpyxl.load_workbook(file_path, read_only=True)
+            workbook = openpyxl.load_workbook(file_path, read_only=True, data_only=True)
             for sheet_name in workbook.sheetnames:
                 sheet = workbook[sheet_name]
                 total_rows = sheet.max_row
